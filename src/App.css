@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Roboto";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.image-container {
+  background-image: url("https://res.cloudinary.com/dlphlzfzq/image/upload/v1699449819/bg-sidebar-mobile_d5mb8m.svg");
+  background-size: cover;
+  height: 600px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    background-image: url("https://res.cloudinary.com/dlphlzfzq/image/upload/v1699449819/bg-sidebar-mobile_d5mb8m.svg");
+    background-size: cover;
+    height: 100px;
+  }
+}
+
+.larget-device {
+  display: none;
+}
+
+.small-device {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .form-container {
+    display: flex;
+    margin: 30px;
+  }
+  .larget-device {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .small-device {
+    display: none;
+  }
+}
+
+.listed {
+  list-style-type: none;
+  display: flex;
+  padding: 10px;
+}
+.info-container {
+  margin-left: 8px;
+  margin-top: 15px;
+}
+.steps {
+  color: lightsteelblue;
+  margin-left: 3px;
+  margin: 0px;
+}
+.info {
+  font-weight: bold;
   color: white;
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.number {
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 10px;
+  margin-right: 10px;
+  color: white;
 }

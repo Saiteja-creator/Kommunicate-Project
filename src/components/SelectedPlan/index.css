@@ -1,0 +1,37 @@
+.select-container {
+  display: flex;
+  flex-direction: column;
+}
+.image-select-container {
+  display: flex;
+  margin-right: 10px;
+  padding: 14px;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 10px;
+}
+.image-value {
+  width: 100px;
+  height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .select-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .image-select-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.go-back {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
